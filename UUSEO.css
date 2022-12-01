@@ -1,0 +1,386 @@
+#grid-container{
+    display: grid;
+    grid-template-areas: "header header header"
+                        "main main main"
+                        "footer footer footer";
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0fr 8fr 0fr;
+    font-family: sans-serif;
+}
+
+header{
+    grid-area: header;
+    background-color: rgb(117, 152, 255);
+    padding: 5px;
+    margin: 5px;
+    width: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+main{
+    grid-area: main;
+    background-color: rgb(180, 224, 255);
+    padding: 5px;
+    margin: 5px;
+    width: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+footer{
+    grid-area: footer;
+    background-color: rgba(179, 255, 255);
+    padding: 3px;
+    margin: 5px;
+    width: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+
+
+
+
+
+
+
+header h2{
+    margin-left: 20px;
+}
+
+main h2{
+    margin-left: 20px;
+}
+
+footer h2{
+    margin-left: 20px;
+}
+
+header {
+    background-image: url(bluewallpaper.jpg);
+  }
+
+body{
+    background-color: rgb(210, 244, 255);
+}
+
+
+
+
+
+
+
+
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-left: 20px;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.705);
+}
+
+#nav-title {
+    margin-right: auto;
+    font-size: 1.5em;
+}
+
+header li {
+    list-style: none;
+    display: inline-block;
+    padding: 0 20px;
+}
+
+header a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    transition: all 0.3s ease 0s;
+}
+
+header a:hover {
+    color: #b2dfdb;
+}
+
+/*Til menyen ^ har jeg fått noe av koden over fra https://dev.to/jungjungie/create-a-navbar-with-css-flexbox-2leh*/
+
+
+
+
+
+
+
+
+
+.flex-container{
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    font-size: 200%;
+    padding-top: 0px;
+}
+
+
+
+
+
+
+
+
+
+main{
+    font-size: larger;
+}
+
+main h1, main p{
+    margin: 10px;
+}
+
+main h1{
+    font-size: 100%;
+}
+
+main p{
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+#capt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: bold;
+    margin-right: 20px;
+    margin-left: 50px;
+}
+
+.table{
+    display: flex;
+    justify-content: center;
+}
+
+#table{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width: 100%;
+    background-color: #6bb8cf;
+}
+
+#table div{
+    padding: 8%;
+    text-align: center;
+    border-left: 2px solid rgb(37, 45, 117);
+    border-top: 2px solid rgb(37, 45, 117);
+}
+
+.rightB{
+    border-right: 2px solid rgb(37, 45, 117);
+}
+
+.bottomB{
+    border-bottom: 2px solid rgb(37, 45, 117);
+}
+
+.head{
+    background-color: rgb(82, 82, 161);
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+.flex-footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer p{
+    font-weight: 600;
+}
+
+.fa {
+    margin-right: 20px;
+    padding: 20px;
+    font-size: 30px;
+    width: 25px;
+    text-align: center;
+    text-decoration: none;
+}
+  
+.fa:hover {
+    color: #032d55;
+}
+  
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+  
+.fa-instagram {
+    background: #dd460a;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px){
+    #table{
+        display: grid;
+        width: 100%;
+    }
+
+    #table div{
+        padding: 8%;
+        text-align: center;
+    }
+
+    #capt{
+        display: none;
+    }
+
+    ul{
+        display: flex;
+        flex-direction: column;
+        margin: 40px;
+        margin-right: 200px;
+    }
+
+    li{
+        margin-bottom: 20px;
+        margin-left: 33%;
+    }
+    
+    #grid-container{
+    display: grid;
+    grid-template-areas: "header header header"
+                        "main main main"
+                        "aside aside aside"
+                        "footer footer footer";
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0fr 1fr 0fr 0fr;
+    }
+
+    main img{
+        width: 600px;
+        height: 500px;
+        padding-left: 45px;
+        padding-top: 1%;
+        padding-bottom: 1%;
+    }
+
+    .fa {
+        margin-bottom: 4px;
+        margin-right:3px;
+        padding: 15px;
+        font-size: 30px;
+        width: 40px;
+        height: 22px;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    footer p{
+        margin-left: 7px;
+    }
+
+    .flex-footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 600px){
+    ul{
+        display: flex;
+        flex-direction: column;
+        margin: 40px;
+        margin-right: 200px;
+    }
+
+    li{
+        margin-bottom: 20px;
+        margin-left: 33%;
+    }
+    
+    #grid-container{
+    display: grid;
+    grid-template-areas: "header header header"
+                        "main main main"
+                        "aside aside aside"
+                        "footer footer footer";
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0fr 1fr 0fr 0fr;
+    }
+
+    main img{
+        display: flex;
+        justify-content: center;
+        width: 500px;
+        height: 420px;
+        padding-left: 5px;
+        padding-top: 1%;
+        padding-bottom: 1%;
+    }
+
+    .fa {
+        margin-bottom: 4px;
+        margin-right:3px;
+        padding: 15px;
+        font-size: 30px;
+        width: 40px;
+        height: 22px;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    footer p{
+        margin-left: 7px;
+    }
+
+    .flex-footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+
+
+
+
+
+
+
+
